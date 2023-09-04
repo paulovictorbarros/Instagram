@@ -1,2 +1,2 @@
 # Instagram
- Homepage do Instagram utlizabdo Jetpack Compose
+ Homepage do Instagram utlizando Jetpack Compose
