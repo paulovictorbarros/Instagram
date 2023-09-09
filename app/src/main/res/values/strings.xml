@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Instagram</string>
+    <string name="name_toolbar">Instagram</string>
+    <string name="content_description_notification_icon">ícone de notificações na barra de Ferramentas</string>
+    <string name="content_description_message_icon">ícone de mensagens na barra de Ferramentas</string>
+    <string name="content_description_story" formatted="true">Storie de %s não visualizado </string>
 </resources>

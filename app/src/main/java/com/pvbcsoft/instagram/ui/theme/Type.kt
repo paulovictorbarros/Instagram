@@ -16,7 +16,7 @@ fun typography(onBackground: Color): Typography {
         bodyLarge = TextStyle(
             fontFamily = FontFamily.Default,
             fontWeight = FontWeight.Normal,
-            fontSize = 16.sp,
+            fontSize = fontSmall,
             lineHeight = 24.sp,
             letterSpacing = 0.5.sp,
             color = onBackground
@@ -24,7 +24,7 @@ fun typography(onBackground: Color): Typography {
         headlineLarge = TextStyle(
             fontFamily = instagramFont,
             fontWeight = FontWeight.Normal,
-            fontSize = 32.sp,
+            fontSize = fontXXLarge,
             color = onBackground
         )
     )

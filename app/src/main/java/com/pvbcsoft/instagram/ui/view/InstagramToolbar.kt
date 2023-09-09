@@ -13,21 +13,27 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.pvbcsoft.instagram.R
+import com.pvbcsoft.instagram.ui.theme.spacingLarge
+import com.pvbcsoft.instagram.ui.theme.spacingMedium
 
 @Composable
 fun InstagramToolbar() {
+
+    val instagramLabel = stringResource(id = R.string.name_toolbar)
+
     Box(modifier = Modifier.background(MaterialTheme.colorScheme.background)) {
         Row(
             modifier = Modifier
-                .padding(horizontal = 16.dp)
+                .padding(horizontal = spacingLarge)
                 .height(56.dp)
         ) {
 
             Text(
-                text = "Instagram",
+                text = instagramLabel,
                 modifier = Modifier
                     .weight(1f)
                     .align(Alignment.CenterVertically),
@@ -38,18 +44,18 @@ fun InstagramToolbar() {
                 painter = painterResource(id = R.drawable.ic_notification),
                 modifier = Modifier
                     .size(32.dp)
-                    .padding(end = 8.dp)
+                    .padding(end = spacingMedium)
                     .align(Alignment.CenterVertically),
-                contentDescription = "ícone de notificações na barra de Ferramentas"
+                contentDescription = stringResource(R.string.content_description_notification_icon)
             )
 
             Image(
                 painter = painterResource(id = R.drawable.ic_message),
                 modifier = Modifier
                     .size(32.dp)
-                    .padding(start = 8.dp)
+                    .padding(start = spacingMedium)
                     .align(Alignment.CenterVertically),
-                contentDescription = "ícone de mensagens na barra de Ferramentas"
+                contentDescription = stringResource(R.string.content_description_message_icon)
             )
         }
     }
